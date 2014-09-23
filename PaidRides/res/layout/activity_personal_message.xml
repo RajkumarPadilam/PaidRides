@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="raj.products.paidrides.MessageBoard"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/blue">
+    
+     <TextView
+        android:id="@+id/tvPersonalMessage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="INBOX"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        />
+    
+    <ListView
+        android:id="@+id/PersonalMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvPersonalMessage"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#787878"
+        android:dividerHeight="5dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/refreshPersonalMessages"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/refresh" />
+
+    <Button
+        android:id="@+id/clearMsgs"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Clear" />
+
+   </RelativeLayout>
+

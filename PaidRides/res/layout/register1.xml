@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blue" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="460dp"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/regUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:text="UserName :"
+            android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/regETUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/regUsername"
+            android:layout_toRightOf="@+id/regUsername"
+            android:ems="10"
+            android:inputType="textPersonName">
+            <requestFocus />
+         </EditText>
+
+        <TextView
+            android:id="@+id/regPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regUsername"
+            android:layout_below="@+id/regUsername"
+            android:layout_marginTop="25dp"
+            android:text="Password :"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/regETPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regUsername"
+            android:layout_alignLeft="@+id/regETUsername"
+            android:layout_alignBottom="@+id/regPassword"
+            android:layout_toRightOf="@+id/regPassword"
+            android:ems="10"
+            android:inputType="textPassword" >
+        </EditText>
+        
+        <TextView
+            android:id="@+id/regConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regPassword"
+            android:layout_below="@+id/regPassword"
+            android:layout_marginTop="25dp"
+            android:text="Cofirm Pswd:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        
+        <EditText
+            android:id="@+id/regETConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regPassword"
+            android:layout_alignBottom="@+id/regConfirmPassword"
+            android:layout_toRightOf="@+id/regConfirmPassword"
+            android:ems="10"
+            android:inputType="textPassword" >
+        </EditText>
+        
+        <TextView
+            android:id="@+id/regPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regConfirmPassword"
+            android:layout_below="@+id/regConfirmPassword"
+            android:layout_marginTop="25dp"
+            android:text="Phone  No:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/regETPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Must for riders"
+            android:textColorHint="#999966"
+            android:layout_below="@+id/regConfirmPassword"
+            android:layout_alignLeft="@+id/regETPassword"
+            android:layout_alignBottom="@+id/regPhone"
+            android:layout_toRightOf="@+id/regPhone"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/regGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regPhone"
+            android:layout_below="@+id/regPhone"
+            android:layout_marginTop="15dp"
+            android:text="Gender"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/regGender"
+            android:layout_below="@+id/regGender"
+            android:layout_marginTop="5dp" >
+
+            <RadioButton
+                android:id="@+id/regBoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/regGirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/isRider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Gender"
+            android:layout_below="@+id/Gender"
+            android:layout_marginTop="14dp"
+            android:textColor="#000000"
+            android:text="Are you a Rider ? ?"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/IsRider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/isRider"
+            android:layout_below="@+id/isRider"
+            android:layout_marginTop="5dp" >
+
+            <RadioButton
+                android:id="@+id/regYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/regNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/IsRider"
+            android:layout_below="@id/IsRider"
+            android:layout_marginTop="40dp"
+            android:textColor="#000000"
+            android:text="Sign Up" />
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/SignUp"
+            android:layout_toRightOf="@+id/regUsername"
+            android:textColor="#000000"
+            android:text="Return to Login" />
+
+        <TextView
+            android:id="@+id/regTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+        	android:typeface="serif"
+            android:text="Registeration"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+        
+    </RelativeLayout>
+
+</ScrollView>

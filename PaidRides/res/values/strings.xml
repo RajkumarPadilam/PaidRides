@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PaidRides</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ghost_riders">GhostRiders</string>
+    <string name="title_activity_message_board">MessageBoard</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+    <string name="title_activity_housing">Housing</string>
+    <string name="title_activity_personal_message">PersonalMessage</string>
+    <string name="title_activity_insert_message">InsertMessage</string>
+    <string name="title_activity_default__riders">DEFAULT_RIDERS</string>
+
+</resources>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context="raj.products.paidrides.UserProfile"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/User_Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="User Settings"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/submit_changes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/etPostMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/PostMessage"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/PostMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioPostMessageGroup1"
+        android:layout_marginTop="16dp"
+        android:text="Message Text :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioAvailabilityGroup1"
+        android:padding="3dp"
+        android:text="Post Message In:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <RadioGroup
+        android:id="@+id/radioAvailabilityGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availability"
+        android:layout_centerHorizontal="true" >
+
+        <RadioButton
+            android:id="@+id/radioAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Available"
+            android:textColor="#11ff11" />
+
+        <RadioButton
+            android:id="@+id/radioBusy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Busy"
+            android:textColor="#ff1111" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioPostMessageGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioAvailabilityGroup1"
+        android:layout_below="@+id/TextView01" >
+
+        <RadioButton
+            android:id="@+id/MessageBoardPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Message Board" />
+
+        <RadioButton
+            android:id="@+id/HousingPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Housing Post" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/User_Settings"
+        android:layout_marginTop="15dp"
+        android:padding="3dp"
+        android:text="Availability :"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context="raj.products.paidrides.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/PMTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/regPhone"
+        android:layout_alignBottom="@+id/regPhone"
+        android:layout_alignLeft="@+id/settings3"
+        android:text="My Room"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/PM2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/inbox" />
+
+    <Button
+        android:id="@+id/ridersBT3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/PM2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rider" />
+
+    <TextView
+        android:id="@+id/regPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/msgBoardbt3"
+        android:layout_below="@+id/msgBoardbt3"
+        android:text="Message Board"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Housing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msgBoardbt3"
+        android:layout_alignLeft="@+id/housing3"
+        android:layout_marginLeft="20dp"
+        android:text="Housing"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/regPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ridersBT3"
+        android:layout_below="@+id/ridersBT3"
+        android:layout_marginTop="14dp"
+        android:text="Riders Online"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/settings3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/Housing"
+        android:layout_alignTop="@+id/msgBoardbt3"
+        android:background="@drawable/settings" />
+
+    <Button
+        android:id="@+id/msgBoardbt3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/regPassword"
+        android:layout_below="@+id/regPassword"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/message" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="by Nikki &apos;n&apos; Raj"
+        android:textColor="#ffffff"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/logout1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/msgBoardbt3"
+        android:background="@drawable/logout" />
+
+    <Button
+        android:id="@+id/housing3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/ridersBT3"
+        android:layout_alignBottom="@+id/ridersBT3"
+        android:layout_toRightOf="@+id/logout1"
+        android:background="@drawable/housing" />
+
+</RelativeLayout>

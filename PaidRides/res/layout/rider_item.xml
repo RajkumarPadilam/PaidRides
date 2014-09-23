@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ImageView 
+        android:id="@+id/riderPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/boy"/>
+    
+    <ImageView 
+        android:id="@+id/riderAvailability"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/red"/>
+    
+    <TextView
+        android:id="@+id/riderName"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/riderPic"
+        android:layout_toLeftOf="@id/riderAvailability"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+  </RelativeLayout>

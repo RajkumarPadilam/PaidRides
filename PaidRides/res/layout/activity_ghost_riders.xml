@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="raj.products.paidrides.GhostRiders"
+    tools:ignore="MergeRootFrame" 
+    android:background="@drawable/blue">
+
+    <TextView
+        android:id="@+id/tvRiders"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Riders Online"
+        android:typeface="serif"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        />
+    
+    <Button 
+        android:id="@+id/AllRiders2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvRiders"
+        android:textColor="#ffffff"
+        android:text="Click to See All Riders"
+        android:background="#006600"
+       />
+    
+    <ListView
+        android:id="@+id/Riders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/AllRiders2"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#787878"
+        android:dividerHeight="5dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/refresh" />
+
+</RelativeLayout>
+
